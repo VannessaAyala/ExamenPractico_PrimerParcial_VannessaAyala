@@ -2,15 +2,15 @@ package edu.espe.springlab.service;
 
 import edu.espe.springlab.dto.DeviceRequestData;
 import edu.espe.springlab.dto.DeviceResponse;
+import edu.espe.springlab.dto.InventoryStatsResponse;
+
+import java.util.List;
 
 public interface DeviceService {
-
-    //Crear un dispositivo a partir del DTO validado
     DeviceResponse create(DeviceRequestData request);
-
-    //Cambiar estado del dispositivo
     DeviceResponse deactivate(Long id);
-
-    //Obtener estadisticas del inventario
-    DeviceResponse stats();
+    InventoryStatsResponse stats();
+    DeviceResponse softDelete(Long id);
+    List<DeviceResponse> searchByCategory(String category);
+    List<DeviceResponse> getLowStock();
 }

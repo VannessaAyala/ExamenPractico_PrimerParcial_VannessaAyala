@@ -8,6 +8,7 @@ public class DeviceResponse {
     private String category;
     private Integer stock;
     private Boolean available;
+    private Boolean deleted;
 
     public Long getId() {
         return id;
@@ -56,4 +57,8 @@ public class DeviceResponse {
     public void setAvailable(Boolean available) {
         this.available = available;
     }
+
+    public Boolean getDeleted() { return deleted; }
+
+    public void setDeleted(Boolean deleted) { this.deleted = deleted; }
 }

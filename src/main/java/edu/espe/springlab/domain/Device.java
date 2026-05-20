@@ -23,6 +23,8 @@ public class Device {
 
     private Boolean available = true;
 
+    private Boolean deleted = false;
+
     public Device() {}
 
     public Long getId() {
@@ -71,5 +73,13 @@ public class Device {
 
     public void setAvailable(Boolean available) {
         this.available = available;
+    }
+
+    public Boolean getDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(Boolean deleted) {
+        this.deleted = deleted;
     }
 }

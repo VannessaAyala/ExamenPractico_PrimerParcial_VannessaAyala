@@ -14,5 +14,8 @@ spring:
     console:
       enabled: true
 
+server:
+  port: 8081
+
 app:
   version: 0.0.0
